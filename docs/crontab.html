@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>定时任务新版 | CatchAdmin 官网</title>
+    <meta name="description" content="基于 Thinkphp &amp; Vue 开发的后台管理框架">
+    <meta name="keywords" content="catchadmin, 后台管理, 前后端分离, thinkphp后台管理框架, thinkphp前后端分离框架,php, elementui">
+  <script data-ad-client="ca-pub-1505209242532150" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <link rel="preload" href="/assets/css/0.styles.8d99d0a9.css" as="style"><link rel="preload" href="/assets/js/app.33baba1d.js" as="script"><link rel="preload" href="/assets/js/2.9f5c9c72.js" as="script"><link rel="preload" href="/assets/js/9.374b97e9.js" as="script"><link rel="prefetch" href="/assets/js/10.88645043.js"><link rel="prefetch" href="/assets/js/11.71e6f4fa.js"><link rel="prefetch" href="/assets/js/12.dea913a4.js"><link rel="prefetch" href="/assets/js/13.18023a32.js"><link rel="prefetch" href="/assets/js/14.d4a9aab5.js"><link rel="prefetch" href="/assets/js/15.a39ad7ab.js"><link rel="prefetch" href="/assets/js/16.3da1654c.js"><link rel="prefetch" href="/assets/js/17.581bd1a7.js"><link rel="prefetch" href="/assets/js/18.b594dfcc.js"><link rel="prefetch" href="/assets/js/19.83323bd6.js"><link rel="prefetch" href="/assets/js/20.36c82bdc.js"><link rel="prefetch" href="/assets/js/21.4d8dff4a.js"><link rel="prefetch" href="/assets/js/22.0238e261.js"><link rel="prefetch" href="/assets/js/23.608ae6f7.js"><link rel="prefetch" href="/assets/js/24.79baa816.js"><link rel="prefetch" href="/assets/js/3.a0c83c87.js"><link rel="prefetch" href="/assets/js/4.67ee2165.js"><link rel="prefetch" href="/assets/js/5.effaae12.js"><link rel="prefetch" href="/assets/js/6.4d869ca1.js"><link rel="prefetch" href="/assets/js/7.c0dfc00b.js"><link rel="prefetch" href="/assets/js/8.81bdb003.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8d99d0a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CatchAdmin 官网</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs/" class="nav-link router-link-active">文档</a></div><div class="nav-item"><a href="http://apidoc.catchadmin.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  接口文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/faq/" class="nav-link">FAQ</a></div><div class="nav-item"><a href="/news/" class="nav-link">视频教程</a></div><div class="nav-item"><a href="/donate/" class="nav-link">赞助名单</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="仓库地址" class="dropdown-title"><span class="title">仓库地址</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/yanwenwu/catch-admin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/jaguarjack/catchAdmin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs/" class="nav-link router-link-active">文档</a></div><div class="nav-item"><a href="http://apidoc.catchadmin.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  接口文档
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/faq/" class="nav-link">FAQ</a></div><div class="nav-item"><a href="/news/" class="nav-link">视频教程</a></div><div class="nav-item"><a href="/donate/" class="nav-link">赞助名单</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="仓库地址" class="dropdown-title"><span class="title">仓库地址</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/yanwenwu/catch-admin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/jaguarjack/catchAdmin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/" class="sidebar-link">项目介绍</a></li><li><a href="/docs/install.html" class="sidebar-link">项目安装</a></li><li><a href="/docs/project-introduce.html" class="sidebar-link">目录结构</a></li><li><a href="/docs/console.html" class="sidebar-link">命令介绍</a></li><li><a href="/docs/request.html" class="sidebar-link">请求介绍</a></li><li><a href="/docs/model.html" class="sidebar-link">模型介绍</a></li><li><a href="/docs/dataScope.html" class="sidebar-link">权限介绍</a></li><li><a href="/docs/extend.html" class="sidebar-link">项目扩展</a></li><li><a href="/docs/http.html" class="sidebar-link">Http客户端</a></li><li><a href="/docs/develop.html" class="sidebar-link">二次开发</a></li><li><a href="/docs/excel.html" class="sidebar-link">Excel</a></li><li><a href="/docs/sensitiveWord.html" class="sidebar-link">敏感词</a></li><li><a href="/docs/crontab.html" class="active sidebar-link">定时任务新版</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/crontab.html#定时任务新版" class="sidebar-link">定时任务新版</a></li></ul></li><li><a href="/docs/front.html" class="sidebar-link">前端开发</a></li><li><a href="/docs/catch-table.html" class="sidebar-link">前端表格组件</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="定时任务新版"><a href="#定时任务新版" class="header-anchor">#</a> 定时任务新版</h2> <p>旧版在使用上有一些困难，很多人不熟悉多进程管理这块，在这块业务上耦合也比较严重，所以有问题，难于调试。新版本在使用上变得更加简单，只需要定义 Command 即可。也不需要之前定义 Task 之类的单独类了。</p> <p>第一变得就是在后台添加定时执行的 <code>command</code> 指令，如下:</p> <div class="language-php extra-class"><pre class="language-php"><code>
+<span class="token keyword">declare</span> <span class="token punctuation">(</span>strict_types<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">namespace</span> <span class="token package">catchAdmin<span class="token punctuation">\</span>monitor<span class="token punctuation">\</span>command</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TestCommand</span> <span class="token keyword">extends</span> <span class="token class-name">Command</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token variable">$pid</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">configure</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// 指令配置</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'testTow'</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setDescription</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'test command'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">execute</span><span class="token punctuation">(</span>Input <span class="token variable">$input</span><span class="token punctuation">,</span> Output <span class="token variable">$output</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p><a href="https://imgchr.com/i/whcbXd" target="_blank" rel="noopener noreferrer"><img src="https://s1.ax1x.com/2020/09/18/whcbXd.jpg" alt="whcbXd.jpg"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+首先按照上图开启你的系统监控模块</p> <p>在后台添加 <code>command</code> 指令即可，目前 command 支持在 <code>catch</code> 目录下的模块中 command 文件夹下自动载入</p> <p><a href="https://imgchr.com/i/srXd10" target="_blank" rel="noopener noreferrer"><img src="https://s3.ax1x.com/2021/01/17/srXd10.png" alt="srXd10.png"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="调度"><a href="#调度" class="header-anchor">#</a> 调度</h3> <p>设置每分钟调度一次，注意这里必须是每分钟</p> <div class="language- extra-class"><pre class="language-text"><code>* * * * * cd /path-to-your-project &amp;&amp; php think catch:schedule &gt;&gt; /dev/null 2&gt;&amp;1
+</code></pre></div><h3 id="自动载入-commands"><a href="#自动载入-commands" class="header-anchor">#</a> 自动载入 commands</h3> <p>在 CatchAdmin 中，command 都是支持自动载入的，只需要这这样实现就可以了. 继承 <code>catcher\ModuleService</code>, 实现 loadCommands
+返回 <strong>NAMESPACE</strong> 和 存放 commands 的文件目录即可.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">namespace</span> <span class="token package">app<span class="token punctuation">\</span>admin</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">catcher<span class="token punctuation">\</span>ModuleService</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">AppService</span> <span class="token keyword">extends</span> <span class="token class-name">ModuleService</span>
+<span class="token punctuation">{</span>
+
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">loadRouteFrom</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// TODO: Implement loadRouteFrom() method.</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">loadCommands</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token constant">__NAMESPACE__</span><span class="token punctuation">,</span> <span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token constant">DIRECTORY_SEPARATOR</span> <span class="token punctuation">.</span> <span class="token single-quoted-string string">'command'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="cron-的表达式"><a href="#cron-的表达式" class="header-anchor">#</a> cron 的表达式</h3> <div class="language- extra-class"><pre class="language-text"><code>// cron 表达式
+ *    *    *    *    *
+ -    -    -    -    -
+ |    |    |    |    |
+ |    |    |    |    |
+ |    |    |    |    +----- day of week (0 - 6) (Sunday=0)
+ |    |    |    +---------- month (1 - 12)
+ |    |    +--------------- day of month (1 - 31)
+ |    +-------------------- hour (0 - 23)
+ +------------------------- min (0 - 59)
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/catch-admin/document/edit/master/docs/docs/crontab.md" target="_blank" rel="noopener noreferrer">在 Github 编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/sensitiveWord.html" class="prev">敏感词</a></span> <span class="next"><a href="/docs/front.html">前端开发</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.33baba1d.js" defer></script><script src="/assets/js/2.9f5c9c72.js" defer></script><script src="/assets/js/9.374b97e9.js" defer></script>
+  </body>
+</html>
